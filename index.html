@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel The Sans</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    /*CSS Reset*/
+    body{
+        font-family: 'Philosopher', sans-serif;
+        color: grey;
+        margin: 0px auto;
+        padding: 0px auto;
+        background: url('images/overview_2.jpg');
+        background-size:cover;
+        background-position-y: 90px;
+        background-repeat:no-repeat;
+        background-color: black;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left:34px ;
+        top: 20px;
+        
+
+    }
+    .mid{
+        display: block;
+        width: 53%;
+        margin: 0px 395px;
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 23px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+    .navbar li a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    .left img{
+        width: 270px;
+    }
+    .btn{
+        font-family: 'Philosopher', sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(54, 53, 53);
+        color: rgb(38, 192, 38);
+        padding: 4px 14px;
+        border: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .btn:hover{
+        color: orange;
+        background-color: grey;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+       
+        <div class="left">
+            <img src="images/SANS_LOGO-removebg-preview.png" alt="">
+           
+        </div>
+        <!-- Mid box for Navbar -->
+        
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> </li>
+                <li>Home<a href="#"></li>
+                <li>Rooms<a href="#"></li>
+                <li>Banquet Halls<a href="#"></li>
+                <li>Restaurant<a href="#"></li>
+                <li>Contact Us<a href="#"></li>
+             </ul>
+
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+</body>
+</html>
