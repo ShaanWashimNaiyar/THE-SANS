@@ -4,100 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel The Sans</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Philosopher', sans-serif;
+            color: grey;
+            margin: 0;
+            padding: 0;
+            background: url('overview2.jpg');
+            background-size: cover;
+            background-position-y: 90px;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+        .navbar li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+        .left img {
+            width: 100%; /* Make the logo responsive */
+            max-width: 200px; /* Define a maximum width */
+        }
+        .right {
+            display: none;
+        }
+        .btn {
+            font-family: 'Philosopher', sans-serif;
+            margin: 0 9px;
+            background-color: rgb(54, 53, 53);
+            color: rgb(38, 192, 38);
+            padding: 4px 14px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .btn:hover {
+            color: orange;
+            background-color: grey;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .mid {
+                display: none;
+            }
+            .navbar {
+                display: block;
+            }
+            .right {
+                display: block;
+            }
+        }
+
+        /* Adjustments for Different Window Sizes */
+        @media (max-width: 1200px) {
+            .mid {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mid {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mid {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Play:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    /*CSS Reset*/
-    body{
-        font-family: 'Philosopher', sans-serif;
-        color: grey;
-        margin: 0px auto;
-        padding: 0px auto;
-        background: url('overview2.jpg');
-        background-size:cover;
-        background-position-y: 90px;
-        background-repeat:no-repeat;
-        background-color: black;
-    }
-    .left{
-        display: inline-block;
-        position: absolute;
-        left:34px ;
-        top: 20px;
-        
-
-    }
-    .mid{
-        display: block;
-        width: 53%;
-        margin: 0px 395px;
-        
-    }
-    .right{
-        position: absolute;
-        right: 34px;
-        top: 20px;
-        display: inline-block;
-        
-    }
-    .navbar{
-        display: inline-block;
-    }
-    .navbar li{
-        display: inline-block;
-        text-decoration: none;
-        font-size: 23px;
-    }
-    .navbar li a{
-        color: white;
-        text-decoration: none;
-        padding: 10px 10px;
-    }
-    .navbar li a:hover{
-        color: orange;
-        text-decoration: underline;
-    }
-    .left img{
-        width: 270px;
-    }
-    .btn{
-        font-family: 'Philosopher', sans-serif;
-        margin: 0px 9px;
-        background-color: rgb(54, 53, 53);
-        color: rgb(38, 192, 38);
-        padding: 4px 14px;
-        border: 10px;
-        font-size: 15px;
-        cursor: pointer;
-        border-radius: 20px;
-    }
-    .btn:hover{
-        color: orange;
-        background-color: grey;
-    }
-
-</style>
 <body>
     <header class="header">
         <!-- Left box for logo -->
-       
         <div class="left">
-            <img src="SANSLOGO-removebg-preview.png" alt="">
-           
+            <img src="SANSLOGO-removebg-preview.png" alt="Hotel Logo">
         </div>
         <!-- Mid box for Navbar -->
-        
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#"> </li>
-                <li>Home<a href="#"></li>
-                <li>Rooms<a href="#"></li>
-                <li>Banquet Halls<a href="#"></li>
-                <li>Restaurant<a href="#"></li>
-                <li>Contact Us<a href="#"></li>
-             </ul>
-
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Banquet Halls</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
         <!-- Right box for buttons -->
         <div class="right">
@@ -105,6 +122,5 @@
             <button class="btn">Email us</button>
         </div>
     </header>
-
 </body>
 </html>
