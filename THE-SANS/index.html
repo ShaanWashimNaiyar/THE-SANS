@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel The Sans</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Philosopher', sans-serif;
+            color: grey;
+            margin: 0;
+            padding: 0;
+            background: url('overview2.jpg');
+            background-size: cover;
+            background-position-y: 90px;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Added background color for better readability */
+            border-radius: 5px; /* Added border radius for styling */
+        }
+        .navbar li {
+            margin-right: 10px; /* Adjusted margin for better spacing */
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px; /* Increased padding for better touch interaction */
+        }
+        .navbar li a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+        .left img {
+            width: 100%;
+            max-width: 270px;
+        }
+        .right {
+            display: none;
+        }
+        .btn {
+            font-family: 'Philosopher', sans-serif;
+            margin: 0 5px; /* Adjusted margin for better spacing */
+            background-color: rgb(54, 53, 53);
+            color: rgb(38, 192, 38);
+            padding: 4px 12px; /* Adjusted padding for better touch interaction */
+            font-size: 14px; /* Slightly reduced font size */
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .btn:hover {
+            color: orange;
+            background-color: grey;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .mid {
+                display: none;
+            }
+            .navbar {
+                display: block;
+                margin-top: 10px; /* Added margin for better spacing */
+                padding: 10px; /* Added padding for better touch interaction */
+            }
+            .navbar li {
+                margin: 5px 0; /* Adjusted margins for better spacing */
+                text-align: center; /* Center-align the navigation items */
+            }
+            .right {
+                display: block;
+                text-align: center; /* Center-align the buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="SANSLOGO-removebg-preview.png" alt="Hotel Logo">
+        </div>
+        <!-- Mid box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Banquet Halls</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Contact Us</a></li>
+             </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+</body>
+</html>
